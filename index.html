@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Burger King </h1>
+        <h3>Choose Your Food Items</h3>
+        <div class="food-selection">
+            <label><input type="checkbox" name="foodItem" value="Burger"> Burger</label>
+            <label><input type="checkbox" name="foodItem" value="Fries"> Fries</label>
+            <label><input type="checkbox" name="foodItem" value="Drink"> Drink</label>
+        </div>
+        <button id="orderButton">Place Order</button>
+
+        <div id="orderId" class="order-id">
+            <p>Your Order ID: <span id="orderIdValue"></span></p>
+        </div>
+
+        <div class="image-container">
+            <img id="foodImage" class="food-image" src="" alt="Your Food" style="display:none;">
+        </div>
+
+        <div id="feedbackContainer" class="feedback-container" style="display:none;">
+            <h4>How was your experience?</h4>
+            <textarea id="feedback" rows="4" placeholder="Leave your feedback here..."></textarea>
+            <button id="submitFeedback">Submit Feedback</button>
+        </div>
+    </div>
+    <audio id="orderSound" src="order.mp3"></audio>
+    <audio id="feedbackSound" src="feedback.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
